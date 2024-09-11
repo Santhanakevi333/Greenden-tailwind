@@ -48,7 +48,7 @@ Fast and Lightweight: Optimized for performance with minimal CSS and fast loadin
 Installation & Setup
 Clone the repository:
 
-{link}
+{https://santhanakevi333.github.io/Greenden-tailwind/}
 
 
 Open the index.html file in your preferred web browser to view the homepage.
