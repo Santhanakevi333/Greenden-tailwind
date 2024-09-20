@@ -14,7 +14,7 @@
     <!-- responsive navbar -->
     <nav class="bg-green-200 flex p-7 justify-between items-center shadow-xl sticky top-0 z-10 ">
         <h1 class="text-2xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-7 md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -31,13 +31,32 @@
             </li>
         </ul>
     </nav>
+    <!-- sidenav -->
+     
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh;right: -50%; ">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600 ">
+            <li class="hover:underline hover:text-black">
+                <a href="#">Home</a>
+            </li>
+            <li class="hover:underline hover:text-black">
+                <a href="product.html">Products</a>
+            </li>
+            <li class="hover:underline hover:text-black">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+      </section>
+
     <!-- our products -->
     <section class="text-center">
         <h1 class="mt-10 font-bold text-3xl">our products</h1>
-        <input type="text" placeholder="search for a product" class=" border border-black m-10 p-2" style="width: 70%;">
+        <input id="search" type="text" placeholder="search for a product" class=" border border-black m-10 p-2" style="width: 70%;">
     
 
-    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-4 ">
+    <div id="product-Container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-4 ">
         <div>
             <img src="Images/Best seller_1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2"
                 alt="none">
@@ -96,6 +115,7 @@
             recommend Greenden for anyone looking to add a touch of nature to their interiors!"</p>
         <p>&copy 2021 Greenday.com</p>
     </section>
+    <script src="product.js"></script>
 
 </body>
 
